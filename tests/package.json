@@ -1,0 +1,13 @@
+{
+  "name": "pdf-g-tests",
+  "private": true,
+  "type": "module",
+  "description": "Pruebas de extremo a extremo de la extensión PDF G",
+  "scripts": {
+    "fixtures": "python3 fixtures.py",
+    "test": "node run.mjs && python3 check.py"
+  },
+  "devDependencies": {
+    "playwright": "1.56.1"
+  }
+}

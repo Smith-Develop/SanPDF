@@ -1,0 +1,55 @@
+<svg viewBox="0 0 1200 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cómo se usa: instala la extensión, suelta tu PDF y descarga el resultado">
+  <desc>Tres tarjetas aparecen de izquierda a derecha y un punto recorre los conectores en bucle.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="380" fill="#000000"/>
+  <rect width="1200" height="380" fill="url(#grid)"/>
+  <text x="40" y="56" font-family="Consolas, 'Courier New', monospace" font-size="13" letter-spacing="2.5" fill="#7e7e7e" text-anchor="start">EN TRES PASOS</text>
+  <line x1="250" y1="51" x2="1160" y2="51" stroke="#3c3c3c"/>
+  <text x="40" y="100" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="26" font-weight="600" fill="#bbbbbb" text-anchor="start">Instalar → soltar → descargar.</text>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.2s" fill="freeze"/>
+    <rect x="40" y="140" width="335" height="180" fill="#141414" stroke="#3c3c3c"/>
+    <rect x="40" y="140" width="335" height="4" fill="#0066b1"/>
+    <circle cx="80" cy="190" r="20" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <text x="80" y="197" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#ffffff" text-anchor="middle">1</text>
+  <text x="116" y="198" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="20" font-weight="800" fill="#ffffff" text-anchor="start">INSTALA</text>
+  <text x="68" y="248" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#bbbbbb" text-anchor="start">chrome://extensions</text>
+  <text x="68" y="274" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#bbbbbb" text-anchor="start">Modo desarrollador →</text>
+  <text x="68" y="300" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#bbbbbb" text-anchor="start">Cargar descomprimida</text>
+  </g>
+  <path id="cf1" d="M 375 230 L 421 230" stroke="#3c3c3c" stroke-width="2" stroke-dasharray="5 5"/>
+  <circle r="4.5" fill="#1c69d4" opacity="0">
+    <animateMotion dur="2.2s" begin="1.6s" repeatCount="indefinite"><mpath href="#cf1"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="2.2s" begin="1.6s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.7s" fill="freeze"/>
+    <rect x="425" y="140" width="335" height="180" fill="#141414" stroke="#3c3c3c"/>
+    <rect x="425" y="140" width="335" height="4" fill="#1c69d4"/>
+    <circle cx="465" cy="190" r="20" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <text x="465" y="197" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#ffffff" text-anchor="middle">2</text>
+  <text x="501" y="198" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="20" font-weight="800" fill="#ffffff" text-anchor="start">SUELTA TU PDF</text>
+  <text x="453" y="248" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#bbbbbb" text-anchor="start">Arrástralo a la herramienta</text>
+  <text x="453" y="274" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#bbbbbb" text-anchor="start">o elige uno con un clic</text>
+  </g>
+  <path id="cf2" d="M 760 230 L 806 230" stroke="#3c3c3c" stroke-width="2" stroke-dasharray="5 5"/>
+  <circle r="4.5" fill="#0fa336" opacity="0">
+    <animateMotion dur="2.2s" begin="2.0s" repeatCount="indefinite"><mpath href="#cf2"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="2.2s" begin="2.0s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.2s" fill="freeze"/>
+    <rect x="810" y="140" width="335" height="180" fill="#141414" stroke="#3c3c3c"/>
+    <rect x="810" y="140" width="335" height="4" fill="#0fa336"/>
+    <circle cx="850" cy="190" r="20" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <text x="850" y="197" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#ffffff" text-anchor="middle">3</text>
+  <text x="886" y="198" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="20" font-weight="800" fill="#ffffff" text-anchor="start">DESCARGA</text>
+  <text x="838" y="248" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#bbbbbb" text-anchor="start">Word, Excel, PDF…</text>
+  <text x="838" y="274" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#bbbbbb" text-anchor="start">en Descargas/PDF G</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.8s" fill="freeze"/>
+    <circle cx="1120" cy="190" r="14" fill="#0fa336"><animate attributeName="r" values="14;17;14" dur="1.6s" begin="2.2s" repeatCount="indefinite"/></circle>
+    <path d="M 1113 190 L 1118 196 L 1128 184" stroke="#fff" stroke-width="2.5" fill="none"/>
+  </g>
+</svg>

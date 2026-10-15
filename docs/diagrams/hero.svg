@@ -1,0 +1,104 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SanPDF: extensión de Chrome que convierte, edita, firma y comprime PDF sin subir nada">
+  <desc>Un PDF entra en PDF G y salen, uno tras otro, Word, Excel, OCR, imágenes, firma y compresión.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="480" fill="#000000"/>
+  <rect width="1200" height="480" fill="url(#grid)"/>
+  <g>
+    <clipPath id="clip00"><rect x="0" y="0" width="1200" height="4"><animate attributeName="width" from="0" to="1200" dur="1.2s" fill="freeze"/></rect></clipPath>
+    <g clip-path="url(#clip00)">
+      <rect x="0" y="0" width="400.0" height="4" fill="#0066b1"/>
+      <rect x="400.0" y="0" width="400.0" height="4" fill="#1c69d4"/>
+      <rect x="800.0" y="0" width="400.0" height="4" fill="#e22718"/>
+    </g>
+  </g>
+  <text x="48" y="64" font-family="Consolas, 'Courier New', monospace" font-size="13" letter-spacing="2.5" fill="#7e7e7e" text-anchor="start">EXTENSIÓN PARA CHROME · 100 % LOCAL</text>
+  <text x="48" y="128" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="72" font-weight="800" fill="#ffffff" text-anchor="start">SANPDF</text>
+  <text x="50" y="168" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="22" font-weight="300" fill="#ffffff" text-anchor="start">Convierte, edita, firma y comprime tus PDF</text>
+  <text x="50" y="198" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="22" font-weight="300" fill="#ffffff" text-anchor="start">en tu navegador. Ningún archivo sale de tu ordenador.</text>
+  <g>
+    <path d="M 110 250 L 158.4 250 L 176.0 267.6 L 176.0 335.8 L 110 335.8 Z" fill="#1f1f1f" stroke="#ffffff" stroke-width="2"/>
+    <path d="M 158.4 250 L 158.4 267.6 L 176.0 267.6" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <rect x="101.2" y="302.8" width="50.6" height="19.8" fill="#e22718"/>
+    <text x="126.5" y="317.65000000000003" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="12.100000000000001" font-weight="800" fill="#fff" text-anchor="middle">PDF</text>
+  </g>
+  <rect x="250" y="250" width="200" height="86" fill="#141414" stroke="#3c3c3c"/>
+  <text x="350" y="288" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="22" font-weight="800" fill="#ffffff" text-anchor="middle">PDF G</text>
+  <text x="350" y="314" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="middle">28 herramientas</text>
+  <path id="h0" d="M 185 293 L 248 293" stroke="#3c3c3c" stroke-width="2" stroke-dasharray="5 5"/>
+  <circle r="4.5" fill="#ffffff" opacity="0">
+    <animateMotion dur="1.6s" begin="0.8s" repeatCount="indefinite"><mpath href="#h0"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="1.6s" begin="0.8s" repeatCount="indefinite"/>
+  </circle>
+  <path id="hp0" d="M 452 293 C 500 293, 510 270, 556 270" fill="none" stroke="#3c3c3c" stroke-width="1.5" stroke-dasharray="4 6"/>
+  <circle r="4.5" fill="#1c69d4" opacity="0">
+    <animateMotion dur="2.4s" begin="1.0s" repeatCount="indefinite"><mpath href="#hp0"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="2.4s" begin="1.0s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.6s" fill="freeze"/>
+    <rect x="560" y="236" width="185" height="68" fill="#141414" stroke="#3c3c3c"/>
+    <rect x="560" y="236" width="4" height="68" fill="#1c69d4"/>
+  <text x="580" y="268" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#ffffff" text-anchor="start">WORD</text>
+  <text x="580" y="290" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">Diseño original</text>
+  </g>
+  <path id="hp1" d="M 452 293 C 500 293, 510 270, 761 270" fill="none" stroke="#3c3c3c" stroke-width="1.5" stroke-dasharray="4 6"/>
+  <circle r="4.5" fill="#0fa336" opacity="0">
+    <animateMotion dur="2.4s" begin="1.35s" repeatCount="indefinite"><mpath href="#hp1"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="2.4s" begin="1.35s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.85s" fill="freeze"/>
+    <rect x="765" y="236" width="185" height="68" fill="#141414" stroke="#3c3c3c"/>
+    <rect x="765" y="236" width="4" height="68" fill="#0fa336"/>
+  <text x="785" y="268" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#ffffff" text-anchor="start">EXCEL</text>
+  <text x="785" y="290" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">Números reales</text>
+  </g>
+  <path id="hp2" d="M 452 293 C 500 293, 510 270, 966 270" fill="none" stroke="#3c3c3c" stroke-width="1.5" stroke-dasharray="4 6"/>
+  <circle r="4.5" fill="#0066b1" opacity="0">
+    <animateMotion dur="2.4s" begin="1.7s" repeatCount="indefinite"><mpath href="#hp2"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="2.4s" begin="1.7s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.1s" fill="freeze"/>
+    <rect x="970" y="236" width="185" height="68" fill="#141414" stroke="#3c3c3c"/>
+    <rect x="970" y="236" width="4" height="68" fill="#0066b1"/>
+  <text x="990" y="268" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#ffffff" text-anchor="start">OCR</text>
+  <text x="990" y="290" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">Escaneado a Word</text>
+  </g>
+  <path id="hp3" d="M 452 293 C 500 293, 510 374, 556 374" fill="none" stroke="#3c3c3c" stroke-width="1.5" stroke-dasharray="4 6"/>
+  <circle r="4.5" fill="#f4b400" opacity="0">
+    <animateMotion dur="2.4s" begin="2.05s" repeatCount="indefinite"><mpath href="#hp3"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="2.4s" begin="2.05s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.35s" fill="freeze"/>
+    <rect x="560" y="340" width="185" height="68" fill="#141414" stroke="#3c3c3c"/>
+    <rect x="560" y="340" width="4" height="68" fill="#f4b400"/>
+  <text x="580" y="372" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#ffffff" text-anchor="start">JPG</text>
+  <text x="580" y="394" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">Páginas a imagen</text>
+  </g>
+  <path id="hp4" d="M 452 293 C 500 293, 510 374, 761 374" fill="none" stroke="#3c3c3c" stroke-width="1.5" stroke-dasharray="4 6"/>
+  <circle r="4.5" fill="#e22718" opacity="0">
+    <animateMotion dur="2.4s" begin="2.4s" repeatCount="indefinite"><mpath href="#hp4"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="2.4s" begin="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.6s" fill="freeze"/>
+    <rect x="765" y="340" width="185" height="68" fill="#141414" stroke="#3c3c3c"/>
+    <rect x="765" y="340" width="4" height="68" fill="#e22718"/>
+  <text x="785" y="372" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#ffffff" text-anchor="start">FIRMA</text>
+  <text x="785" y="394" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">Firma y rellena</text>
+  </g>
+  <path id="hp5" d="M 452 293 C 500 293, 510 374, 966 374" fill="none" stroke="#3c3c3c" stroke-width="1.5" stroke-dasharray="4 6"/>
+  <circle r="4.5" fill="#ffffff" opacity="0">
+    <animateMotion dur="2.4s" begin="2.75s" repeatCount="indefinite"><mpath href="#hp5"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="2.4s" begin="2.75s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.85s" fill="freeze"/>
+    <rect x="970" y="340" width="185" height="68" fill="#141414" stroke="#3c3c3c"/>
+    <rect x="970" y="340" width="4" height="68" fill="#ffffff"/>
+  <text x="990" y="372" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#ffffff" text-anchor="start">−80 %</text>
+  <text x="990" y="394" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">Comprime</text>
+  </g>
+  <line x1="48" y1="430" x2="1152" y2="430" stroke="#3c3c3c"/>
+  <text x="48" y="458" font-family="Consolas, 'Courier New', monospace" font-size="12" letter-spacing="2.5" fill="#7e7e7e" text-anchor="start">CONVERTIR · ORGANIZAR · EDITAR Y FIRMAR · OPTIMIZAR Y PROTEGER · CREAR</text>
+</svg>

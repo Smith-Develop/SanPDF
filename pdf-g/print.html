@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8" /><title>PDF G · Imprimir</title>
+<style>
+  @page { size: A4; margin: 18mm; }
+  body { font: 11pt/1.45 Calibri, "Segoe UI", Arial, sans-serif; color: #111; margin: 0; }
+  .hint { position: fixed; top: 0; left: 0; right: 0; padding: 10px 16px; background: #000; color: #fff; font: 13px system-ui, sans-serif; border-bottom: 4px solid #1c69d4; }
+  #doc { max-width: 180mm; margin: 50px auto 20px; }
+  img { max-width: 100%; }
+  table { border-collapse: collapse; margin: 8px 0; }
+  td, th { border: 1px solid #999; padding: 4px 6px; vertical-align: top; }
+  h1, h2, h3 { break-after: avoid; }
+  @media print { .hint { display: none; } #doc { margin: 0 auto; max-width: none; } }
+</style></head>
+<body><div class="hint">En la ventana de impresión elige <b>Destino: Guardar como PDF</b> y pulsa Guardar.</div><div id="doc"></div></body>
+</html>

@@ -1,0 +1,9 @@
+PDF G incluye estas librerías de código abierto (todas de licencia permisiva):
+- pdf.js 4.10 (Apache-2.0) · Mozilla — leer y mostrar PDF
+- pdf-lib 1.17 (MIT) — crear y modificar PDF
+- ExcelJS 4.4 (MIT) — crear y leer Excel
+- docx 9.9 (MIT) — crear documentos Word
+- mammoth 1.13 (BSD-2-Clause) — leer documentos Word
+- Tesseract.js 6 y tesseract.js-core (Apache-2.0) + datos de idioma spa/eng (Apache-2.0) — OCR
+- qpdf-wasm 0.3 (ISC) sobre qpdf (Apache-2.0) — cifrado, descifrado y optimización
+- Inter (SIL Open Font License 1.1), ver fonts/OFL-Inter.txt

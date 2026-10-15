@@ -1,0 +1,134 @@
+<svg viewBox="0 0 1200 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Las 28 herramientas de SanPDF agrupadas en cinco categorías">
+  <desc>Cinco columnas de herramientas aparecen una a una.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="470" fill="#000000"/>
+  <rect width="1200" height="470" fill="url(#grid)"/>
+  <text x="40" y="56" font-family="Consolas, 'Courier New', monospace" font-size="13" letter-spacing="2.5" fill="#7e7e7e" text-anchor="start">28 HERRAMIENTAS</text>
+  <line x1="260" y1="51" x2="1160" y2="51" stroke="#3c3c3c"/>
+  <rect x="40" y="86" width="210" height="4" fill="#0066b1"/>
+  <text x="40" y="118" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="800" letter-spacing="1.5" fill="#ffffff">CONVERTIR</text>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.35s" begin="0.15s" fill="freeze"/>
+    <rect x="40" y="140" width="210" height="30" fill="#141414" stroke="#3c3c3c"/>
+  <text x="52" y="160" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">PDF a Excel</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.35s" begin="0.22999999999999998s" fill="freeze"/>
+    <rect x="40" y="178" width="210" height="30" fill="#141414" stroke="#3c3c3c"/>
+  <text x="52" y="198" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">PDF a Word</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.35s" begin="0.31s" fill="freeze"/>
+    <rect x="40" y="216" width="210" height="30" fill="#141414" stroke="#3c3c3c"/>
+  <text x="52" y="236" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">PDF a imágenes</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.35s" begin="0.39s" fill="freeze"/>
+    <rect x="40" y="254" width="210" height="30" fill="#141414" stroke="#3c3c3c"/>
+  <text x="52" y="274" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">PDF a texto</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.35s" begin="0.47s" fill="freeze"/>
+    <rect x="40" y="292" width="210" height="30" fill="#141414" stroke="#3c3c3c"/>
+  <text x="52" y="312" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">Imágenes a PDF</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.35s" begin="0.55s" fill="freeze"/>
+    <rect x="40" y="330" width="210" height="30" fill="#141414" stroke="#3c3c3c"/>
+  <text x="52" y="350" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">Word a PDF</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.35s" begin="0.63s" fill="freeze"/>
+    <rect x="40" y="368" width="210" height="30" fill="#141414" stroke="#3c3c3c"/>
+  <text x="52" y="388" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">Excel a PDF</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.35s" begin="0.7100000000000001s" fill="freeze"/>
+    <rect x="40" y="406" width="210" height="30" fill="#141414" stroke="#3c3c3c"/>
+  <text x="52" y="426" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">Página web a PDF</text>
+  </g>
+  <rect x="266" y="86" width="210" height="4" fill="#1c69d4"/>
+  <text x="266" y="118" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="800" letter-spacing="1.5" fill="#ffffff">ORGANIZAR</text>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.35s" begin="0.79s" fill="freeze"/>
+    <rect x="266" y="140" width="210" height="30" fill="#141414" stroke="#3c3c3c"/>
+  <text x="278" y="160" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">Unir PDF</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.35s" begin="0.87s" fill="freeze"/>
+    <rect x="266" y="178" width="210" height="30" fill="#141414" stroke="#3c3c3c"/>
+  <text x="278" y="198" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">Dividir PDF</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.35s" begin="0.9500000000000001s" fill="freeze"/>
+    <rect x="266" y="216" width="210" height="30" fill="#141414" stroke="#3c3c3c"/>
+  <text x="278" y="236" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">Organizar páginas</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.35s" begin="1.03s" fill="freeze"/>
+    <rect x="266" y="254" width="210" height="30" fill="#141414" stroke="#3c3c3c"/>
+  <text x="278" y="274" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">Extraer páginas</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.35s" begin="1.1099999999999999s" fill="freeze"/>
+    <rect x="266" y="292" width="210" height="30" fill="#141414" stroke="#3c3c3c"/>
+  <text x="278" y="312" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">Girar PDF</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.35s" begin="1.19s" fill="freeze"/>
+    <rect x="266" y="330" width="210" height="30" fill="#141414" stroke="#3c3c3c"/>
+  <text x="278" y="350" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">Eliminar páginas</text>
+  </g>
+  <rect x="492" y="86" width="210" height="4" fill="#e22718"/>
+  <text x="492" y="118" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="800" letter-spacing="1.5" fill="#ffffff">EDITAR Y FIRMAR</text>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.35s" begin="1.27s" fill="freeze"/>
+    <rect x="492" y="140" width="210" height="30" fill="#141414" stroke="#3c3c3c"/>
+  <text x="504" y="160" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">Editar PDF</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.35s" begin="1.3499999999999999s" fill="freeze"/>
+    <rect x="492" y="178" width="210" height="30" fill="#141414" stroke="#3c3c3c"/>
+  <text x="504" y="198" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">Firmar PDF</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.35s" begin="1.43s" fill="freeze"/>
+    <rect x="492" y="216" width="210" height="30" fill="#141414" stroke="#3c3c3c"/>
+  <text x="504" y="236" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">Rellenar formulario</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.35s" begin="1.51s" fill="freeze"/>
+    <rect x="492" y="254" width="210" height="30" fill="#141414" stroke="#3c3c3c"/>
+  <text x="504" y="274" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">Marca de agua</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.35s" begin="1.5899999999999999s" fill="freeze"/>
+    <rect x="492" y="292" width="210" height="30" fill="#141414" stroke="#3c3c3c"/>
+  <text x="504" y="312" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">Numerar páginas</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.35s" begin="1.67s" fill="freeze"/>
+    <rect x="492" y="330" width="210" height="30" fill="#141414" stroke="#3c3c3c"/>
+  <text x="504" y="350" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">Datos del documento</text>
+  </g>
+  <rect x="718" y="86" width="210" height="4" fill="#0fa336"/>
+  <text x="718" y="118" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="800" letter-spacing="1.5" fill="#ffffff">OPTIMIZAR Y PROTEGER</text>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.35s" begin="1.75s" fill="freeze"/>
+    <rect x="718" y="140" width="210" height="30" fill="#141414" stroke="#3c3c3c"/>
+  <text x="730" y="160" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">Comprimir PDF</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.35s" begin="1.8299999999999998s" fill="freeze"/>
+    <rect x="718" y="178" width="210" height="30" fill="#141414" stroke="#3c3c3c"/>
+  <text x="730" y="198" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">OCR a Word o PDF</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.35s" begin="1.91s" fill="freeze"/>
+    <rect x="718" y="216" width="210" height="30" fill="#141414" stroke="#3c3c3c"/>
+  <text x="730" y="236" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">Proteger con contraseña</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.35s" begin="1.99s" fill="freeze"/>
+    <rect x="718" y="254" width="210" height="30" fill="#141414" stroke="#3c3c3c"/>
+  <text x="730" y="274" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">Quitar contraseña</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.35s" begin="2.07s" fill="freeze"/>
+    <rect x="718" y="292" width="210" height="30" fill="#141414" stroke="#3c3c3c"/>
+  <text x="730" y="312" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">Aplanar PDF</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.35s" begin="2.15s" fill="freeze"/>
+    <rect x="718" y="330" width="210" height="30" fill="#141414" stroke="#3c3c3c"/>
+  <text x="730" y="350" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">Reparar PDF</text>
+  </g>
+  <rect x="944" y="86" width="210" height="4" fill="#ffffff"/>
+  <text x="944" y="118" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="800" letter-spacing="1.5" fill="#ffffff">CREAR</text>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.35s" begin="2.23s" fill="freeze"/>
+    <rect x="944" y="140" width="210" height="30" fill="#141414" stroke="#3c3c3c"/>
+  <text x="956" y="160" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">Crear PDF</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.35s" begin="2.31s" fill="freeze"/>
+    <rect x="944" y="178" width="210" height="30" fill="#141414" stroke="#3c3c3c"/>
+  <text x="956" y="198" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="start">Texto a PDF</text>
+  </g>
+</svg>

@@ -1,0 +1,39 @@
+<svg viewBox="0 0 1200 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Acceso directo: el botón descarga un instalador que crea PDF G en el escritorio">
+  <desc>Un cursor pulsa el botón, aparece el instalador y después el icono de PDF G en el escritorio.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="340" fill="#000000"/>
+  <rect width="1200" height="340" fill="url(#grid)"/>
+  <text x="40" y="56" font-family="Consolas, 'Courier New', monospace" font-size="13" letter-spacing="2.5" fill="#7e7e7e" text-anchor="start">ACCESO DIRECTO EN EL ESCRITORIO (WINDOWS)</text>
+  <line x1="520" y1="51" x2="1160" y2="51" stroke="#3c3c3c"/>
+  <rect x="60" y="130" width="260" height="56" fill="#000000" stroke="#ffffff"/>
+  <text x="190" y="164" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" font-weight="800" letter-spacing="1.5" fill="#ffffff" text-anchor="middle">CREAR ACCESO DIRECTO</text>
+  <path d="M 0 0 L 0 18 L 5 13 L 9 21 L 12 20 L 8 12 L 14 12 Z" fill="#fff" stroke="#000" transform="translate(250,150)">
+    <animateTransform attributeName="transform" type="translate" values="330,240;250,165;250,165;250,165" keyTimes="0;0.15;0.2;1" dur="7s" repeatCount="indefinite"/>
+  </path>
+  <text x="190" y="220" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="middle">Botón en la barra superior</text>
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.200;0.230;0.941;0.971;1" dur="7s" repeatCount="indefinite"/>
+  <g>
+    <path d="M 470 112 L 509.6 112 L 524.0 126.4 L 524.0 182.2 L 470 182.2 Z" fill="#1f1f1f" stroke="#ffffff" stroke-width="2"/>
+    <path d="M 509.6 112 L 509.6 126.4 L 524.0 126.4" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <rect x="462.8" y="155.2" width="41.4" height="16.2" fill="#1c69d4"/>
+    <text x="483.5" y="167.35" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="9.9" font-weight="800" fill="#fff" text-anchor="middle">.CMD</text>
+  </g>
+  <text x="497" y="220" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="middle">Instalador</text>
+  <text x="497" y="240" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#7e7e7e" text-anchor="middle">(doble clic)</text>
+  </g>
+  <rect x="760" y="100" width="380" height="200" fill="#141414" stroke="#3c3c3c"/>
+  <text x="950" y="290" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#7e7e7e" text-anchor="middle">Escritorio</text>
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.457;0.487;0.941;0.971;1" dur="7s" repeatCount="indefinite"/>
+    <rect x="910" y="140" width="80" height="80" fill="#000" stroke="#ffffff"/>
+    <path d="M 932 154 L 958 154 L 968 164 L 968 204 L 932 204 Z" fill="none" stroke="#fff" stroke-width="2.5"/>
+    <text x="950" y="190" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="20" font-weight="800" fill="#fff" text-anchor="middle">G</text>
+    <rect x="910" y="214" width="27" height="6" fill="#0066b1"/><rect x="937" y="214" width="26" height="6" fill="#1c69d4"/><rect x="963" y="214" width="27" height="6" fill="#e22718"/>
+    <text x="950" y="244" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">PDF G</text>
+  </g>
+  <text x="410" y="168" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="28" fill="#7e7e7e" text-anchor="middle">→</text>
+  <text x="670" y="168" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="28" fill="#7e7e7e" text-anchor="middle">→</text>
+</svg>

@@ -1,0 +1,58 @@
+PDF G by Smith-Develop · v1.3
+=============================
+Convierte, edita y crea PDF dentro de Chrome. Todo se procesa en tu ordenador:
+los archivos nunca se suben a ningún sitio.
+
+INSTALAR
+1. Descomprime el zip en una carpeta que no vayas a borrar.
+2. chrome://extensions > activa "Modo de desarrollador" > "Cargar descomprimida" > carpeta pdf-g.
+3. Fija el icono: al pulsarlo se abre PDF G en una pestaña.
+4. Acceso directo en el escritorio (Windows): al instalarla aparece un aviso; pulsa
+   "Crear acceso directo" (también está arriba a la derecha). Se descarga un pequeño
+   instalador "Crear acceso directo PDF G.cmd": ábrelo con doble clic y aparecerá
+   "PDF G" en el escritorio, que abre la aplicación en su propia ventana.
+   (Chrome no deja a las extensiones escribir en el escritorio directamente.)
+   Si Windows avisa, pulsa "Más información" > "Ejecutar de todas formas".
+
+PDF A EXCEL (destacado)
+- Tablas con bordes (facturas) y sin bordes (extractos bancarios, listados).
+- Números en formato español o inglés, importes con €, negativos, % y fechas
+  se guardan como valores reales de Excel (se pueden sumar y filtrar).
+- Une los conceptos partidos en dos líneas y escribe una sola vez la cabecera
+  que se repite en cada página.
+- PDF escaneados: OCR automático (español e inglés incluidos).
+- Vista previa editable: corrige cualquier celda antes de descargar.
+- Salida: una hoja, una hoja por página o una hoja por tabla. También CSV.
+
+TODAS LAS HERRAMIENTAS (28)
+Convertir: PDF a Excel, Word, imágenes y texto · Imágenes, Word, Excel (.xlsx, .xls, CSV) y páginas web a PDF.
+Organizar: unir, dividir, organizar páginas, extraer, girar y eliminar páginas.
+Editar y firmar: editor (texto, imágenes, firma, dibujo, resaltar, tapar, tachar,
+  marcas), firmar, rellenar formularios, marca de agua, numerar, datos del documento.
+Optimizar y seguridad: comprimir (4 niveles), OCR (escaneado a Word editable con el diseño original, o PDF buscable), proteger con
+  contraseña (AES-256), quitar contraseña, aplanar y reparar.
+Crear: PDF en blanco con el editor y texto a PDF.
+"Seguir trabajando con este PDF" encadena herramientas sin volver a subir el archivo.
+
+COMPRIMIR
+- Ligera: sin pérdida (optimiza la estructura).
+- Recomendada: imágenes hasta 1700 px (en las pruebas, 5,8 MB → 232 KB) · el texto se mantiene.
+- Fuerte: imágenes hasta 1150 px · el texto se mantiene.
+- Máxima: cada página como imagen (el texto deja de ser seleccionable).
+
+A TENER EN CUENTA
+- Word y Excel a PDF abren la vista de impresión: elige "Guardar como PDF".
+  Los documentos con maquetación compleja pueden variar respecto al original.
+- PDF a Word, "Diseño original" (por defecto): mismo aspecto que el PDF (colores, imágenes,
+  posiciones y saltos de línea) con el texto editable en cuadros, como al abrir el PDF con Word.
+  Las imágenes y formas quedan como fondo de la página. "Solo texto": documento fluido.
+- Página web a PDF pide permiso la primera vez (para imprimir pestañas).
+- La calidad del OCR depende de la calidad del escaneo (mejor a 200-300 ppp).
+- OCR a Word: el texto reconocido se borra de la imagen y se coloca encima, editable, con su color,
+  tamaño y negrita. Los iconos, fotos y la letra manuscrita se quedan como imagen. Para textos
+  condensados se usa Arial Narrow (viene con Office) si está instalada; si no, Arial.
+
+PERMISOS (pensado para publicarla en la Chrome Web Store)
+- storage: firmas guardadas · downloads: guardar resultados en Descargas/PDF G.
+- Opcionales (solo "Página web a PDF", se piden al usarla): debugger y acceso a las webs.
+Todas las librerías son de licencia permisiva: ver lib/LICENCIAS.txt.

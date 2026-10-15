@@ -1,0 +1,80 @@
+<svg viewBox="0 0 1200 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="PDF a Excel: cada fila de la tabla del PDF pasa a la hoja con fechas e importes reales">
+  <desc>Las filas de la factura se iluminan una a una y aparecen en la hoja de cálculo con los importes alineados como números.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="440" fill="#000000"/>
+  <rect width="1200" height="440" fill="url(#grid)"/>
+  <text x="40" y="56" font-family="Consolas, 'Courier New', monospace" font-size="13" letter-spacing="2.5" fill="#7e7e7e" text-anchor="start">PDF A EXCEL</text>
+  <line x1="200" y1="51" x2="1160" y2="51" stroke="#3c3c3c"/>
+  <text x="40" y="100" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="26" font-weight="600" fill="#bbbbbb" text-anchor="start">Tablas con números y fechas de verdad.</text>
+  <rect x="40" y="140" width="420" height="250" fill="#ffffff"/>
+  <text x="60" y="174" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#111">Factura de prueba</text>
+  <rect x="60" y="200" width="380" height="34" fill="#cfe2f3" stroke="#999"/>
+  <text x="70" y="222" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" fill="#111" text-anchor="start">Fecha</text>
+  <text x="190" y="222" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" fill="#111" text-anchor="start">Concepto</text>
+  <text x="430" y="222" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" fill="#111" text-anchor="end">Importe</text>
+  <rect x="60" y="234" width="380" height="34" fill="#ffffff" stroke="#999"/>
+  <text x="70" y="256" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" fill="#111" text-anchor="start">01/03/2026</text>
+  <text x="190" y="256" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" fill="#111" text-anchor="start">Servicio 1</text>
+  <text x="430" y="256" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" fill="#111" text-anchor="end">123,45 €</text>
+  <rect x="60" y="234" width="380" height="34" fill="#0fa336" opacity="0"><animate attributeName="opacity" values="0;0;0.25;0;0" keyTimes="0;0.143;0.186;0.257;1" dur="7s" repeatCount="indefinite"/></rect>
+  <rect x="60" y="268" width="380" height="34" fill="#ffffff" stroke="#999"/>
+  <text x="70" y="290" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" fill="#111" text-anchor="start">02/03/2026</text>
+  <text x="190" y="290" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" fill="#111" text-anchor="start">Servicio 2</text>
+  <text x="430" y="290" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" fill="#111" text-anchor="end">246,90 €</text>
+  <rect x="60" y="268" width="380" height="34" fill="#0fa336" opacity="0"><animate attributeName="opacity" values="0;0;0.25;0;0" keyTimes="0;0.229;0.271;0.343;1" dur="7s" repeatCount="indefinite"/></rect>
+  <rect x="60" y="302" width="380" height="34" fill="#ffffff" stroke="#999"/>
+  <text x="70" y="324" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" fill="#111" text-anchor="start">03/03/2026</text>
+  <text x="190" y="324" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" fill="#111" text-anchor="start">Servicio 3</text>
+  <text x="430" y="324" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" fill="#111" text-anchor="end">370,35 €</text>
+  <rect x="60" y="302" width="380" height="34" fill="#0fa336" opacity="0"><animate attributeName="opacity" values="0;0;0.25;0;0" keyTimes="0;0.314;0.357;0.429;1" dur="7s" repeatCount="indefinite"/></rect>
+  <rect x="60" y="336" width="380" height="34" fill="#ffffff" stroke="#999"/>
+  <text x="70" y="358" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" fill="#111" text-anchor="start">04/03/2026</text>
+  <text x="190" y="358" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" fill="#111" text-anchor="start">Servicio 4</text>
+  <text x="430" y="358" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" fill="#111" text-anchor="end">493,80 €</text>
+  <rect x="60" y="336" width="380" height="34" fill="#0fa336" opacity="0"><animate attributeName="opacity" values="0;0;0.25;0;0" keyTimes="0;0.400;0.443;0.514;1" dur="7s" repeatCount="indefinite"/></rect>
+  <rect x="640" y="140" width="520" height="250" fill="#141414" stroke="#3c3c3c"/>
+  <text x="730" y="164" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#7e7e7e" text-anchor="middle">A</text>
+  <text x="890" y="164" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#7e7e7e" text-anchor="middle">B</text>
+  <text x="1050" y="164" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#7e7e7e" text-anchor="middle">C</text>
+  <line x1="640" y1="176" x2="1160" y2="176" stroke="#3c3c3c"/>
+  <line x1="640" y1="216" x2="1160" y2="216" stroke="#3c3c3c" stroke-opacity="0.6"/>
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.086;0.116;0.913;0.943;1" dur="7s" repeatCount="indefinite"/>
+  <text x="660" y="202" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="start">Fecha</text>
+  <text x="820" y="202" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="start">Concepto</text>
+  <text x="1120" y="202" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="end">Importe</text>
+  </g>
+  <line x1="640" y1="256" x2="1160" y2="256" stroke="#3c3c3c" stroke-opacity="0.6"/>
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.171;0.201;0.913;0.943;1" dur="7s" repeatCount="indefinite"/>
+  <text x="790" y="242" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#bbbbbb" text-anchor="end">01/03/2026</text>
+  <text x="820" y="242" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#bbbbbb" text-anchor="start">Servicio 1</text>
+  <text x="1120" y="242" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#0fa336" text-anchor="end">123,45 €</text>
+  </g>
+  <line x1="640" y1="296" x2="1160" y2="296" stroke="#3c3c3c" stroke-opacity="0.6"/>
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.257;0.287;0.913;0.943;1" dur="7s" repeatCount="indefinite"/>
+  <text x="790" y="282" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#bbbbbb" text-anchor="end">02/03/2026</text>
+  <text x="820" y="282" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#bbbbbb" text-anchor="start">Servicio 2</text>
+  <text x="1120" y="282" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#0fa336" text-anchor="end">246,90 €</text>
+  </g>
+  <line x1="640" y1="336" x2="1160" y2="336" stroke="#3c3c3c" stroke-opacity="0.6"/>
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.343;0.373;0.913;0.943;1" dur="7s" repeatCount="indefinite"/>
+  <text x="790" y="322" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#bbbbbb" text-anchor="end">03/03/2026</text>
+  <text x="820" y="322" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#bbbbbb" text-anchor="start">Servicio 3</text>
+  <text x="1120" y="322" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#0fa336" text-anchor="end">370,35 €</text>
+  </g>
+  <line x1="640" y1="376" x2="1160" y2="376" stroke="#3c3c3c" stroke-opacity="0.6"/>
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.429;0.459;0.913;0.943;1" dur="7s" repeatCount="indefinite"/>
+  <text x="790" y="362" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#bbbbbb" text-anchor="end">04/03/2026</text>
+  <text x="820" y="362" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#bbbbbb" text-anchor="start">Servicio 4</text>
+  <text x="1120" y="362" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#0fa336" text-anchor="end">493,80 €</text>
+  </g>
+  <path id="xl" d="M 465 265 L 632 265" stroke="#3c3c3c" stroke-width="2" stroke-dasharray="5 5"/>
+  <circle r="4.5" fill="#0fa336" opacity="0">
+    <animateMotion dur="1.4s" begin="0.5s" repeatCount="indefinite"><mpath href="#xl"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="1.4s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+  <text x="900" y="420" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#bbbbbb" text-anchor="middle">Fechas como fechas, importes como números: se pueden sumar y filtrar</text>
+</svg>

@@ -1,0 +1,90 @@
+<svg viewBox="0 0 1200 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="PDF a Word con el diseño original: fondo sin texto más el texto en marcos editables">
+  <desc>La página se separa en dos capas: el fondo con imágenes y colores, y el texto en marcos editables; juntas forman el Word.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="470" fill="#000000"/>
+  <rect width="1200" height="470" fill="url(#grid)"/>
+  <text x="40" y="56" font-family="Consolas, 'Courier New', monospace" font-size="13" letter-spacing="2.5" fill="#7e7e7e" text-anchor="start">PDF A WORD · DISEÑO ORIGINAL</text>
+  <line x1="380" y1="51" x2="1160" y2="51" stroke="#3c3c3c"/>
+  <text x="40" y="100" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="26" font-weight="600" fill="#bbbbbb" text-anchor="start">El mismo aspecto, con el texto editable.</text>
+  <rect x="40" y="140" width="220" height="290" fill="#eef3f9"/>
+  <rect x="40" y="140" width="220" height="44" fill="#0066b1"/>
+  <rect x="54" y="204" width="90" height="70" fill="#d7e3f2"/>
+  <rect x="156" y="204" width="90" height="70" fill="#f6dada"/>
+  <circle cx="80" cy="312" r="16" fill="#0fa336"/>
+  <rect x="54" y="156" width="130" height="12" fill="#ffffff"/>
+  <rect x="62" y="218" width="70" height="8" fill="#123"/>
+  <rect x="62" y="234" width="60" height="6" fill="#456"/>
+  <rect x="164" y="218" width="60" height="8" fill="#e22718"/>
+  <rect x="106" y="306" width="130" height="8" fill="#123"/>
+  <rect x="54" y="350" width="190" height="6" fill="#456"/>
+  <rect x="54" y="364" width="170" height="6" fill="#456"/>
+  <rect x="54" y="378" width="180" height="6" fill="#456"/>
+  <g>
+    <path d="M 210 372 L 236.4 372 L 246.0 381.6 L 246.0 418.8 L 210 418.8 Z" fill="#1f1f1f" stroke="#ffffff" stroke-width="2"/>
+    <path d="M 236.4 372 L 236.4 381.6 L 246.0 381.6" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <rect x="205.2" y="400.8" width="27.599999999999998" height="10.799999999999999" fill="#e22718"/>
+    <text x="219.0" y="408.90000000000003" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="6.6" font-weight="800" fill="#fff" text-anchor="middle">PDF</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.100;0.130;0.950;0.980;1" dur="8s" repeatCount="indefinite"/>
+  <rect x="345" y="140" width="220" height="290" fill="#eef3f9"/>
+  <rect x="345" y="140" width="220" height="44" fill="#0066b1"/>
+  <rect x="359" y="204" width="90" height="70" fill="#d7e3f2"/>
+  <rect x="461" y="204" width="90" height="70" fill="#f6dada"/>
+  <circle cx="385" cy="312" r="16" fill="#0fa336"/>
+  <text x="455" y="452" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#bbbbbb" text-anchor="middle">Fondo: la página sin el texto</text>
+  </g>
+  <rect x="650" y="140" width="220" height="290" fill="none" stroke="#3c3c3c" stroke-dasharray="6 6"/>
+    <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.200;0.230;0.950;0.980;1" dur="8s" repeatCount="indefinite"/>
+      <rect x="660" y="156" width="138" height="20" fill="none" stroke="#1c69d4" stroke-dasharray="3 3"/>
+      <rect x="664" y="162" width="130" height="8" fill="#fff"/>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.231;0.261;0.950;0.980;1" dur="8s" repeatCount="indefinite"/>
+      <rect x="668" y="218" width="78" height="20" fill="none" stroke="#1c69d4" stroke-dasharray="3 3"/>
+      <rect x="672" y="224" width="70" height="8" fill="#123"/>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.263;0.292;0.950;0.980;1" dur="8s" repeatCount="indefinite"/>
+      <rect x="770" y="218" width="68" height="20" fill="none" stroke="#1c69d4" stroke-dasharray="3 3"/>
+      <rect x="774" y="224" width="60" height="8" fill="#e22718"/>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.294;0.324;0.950;0.980;1" dur="8s" repeatCount="indefinite"/>
+      <rect x="712" y="306" width="138" height="20" fill="none" stroke="#1c69d4" stroke-dasharray="3 3"/>
+      <rect x="716" y="312" width="130" height="8" fill="#123"/>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.325;0.355;0.950;0.980;1" dur="8s" repeatCount="indefinite"/>
+      <rect x="660" y="350" width="198" height="20" fill="none" stroke="#1c69d4" stroke-dasharray="3 3"/>
+      <rect x="664" y="356" width="190" height="8" fill="#456"/>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.356;0.386;0.950;0.980;1" dur="8s" repeatCount="indefinite"/>
+      <rect x="660" y="364" width="178" height="20" fill="none" stroke="#1c69d4" stroke-dasharray="3 3"/>
+      <rect x="664" y="370" width="170" height="8" fill="#456"/>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.388;0.417;0.950;0.980;1" dur="8s" repeatCount="indefinite"/>
+      <rect x="660" y="378" width="188" height="20" fill="none" stroke="#1c69d4" stroke-dasharray="3 3"/>
+      <rect x="664" y="384" width="180" height="8" fill="#456"/>
+    </g>
+  <text x="760" y="452" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#bbbbbb" text-anchor="middle">Texto: marcos editables en su sitio</text>
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.525;0.555;0.950;0.980;1" dur="8s" repeatCount="indefinite"/>
+  <rect x="950" y="140" width="220" height="290" fill="#eef3f9"/>
+  <rect x="950" y="140" width="220" height="44" fill="#0066b1"/>
+  <rect x="964" y="204" width="90" height="70" fill="#d7e3f2"/>
+  <rect x="1066" y="204" width="90" height="70" fill="#f6dada"/>
+  <circle cx="990" cy="312" r="16" fill="#0fa336"/>
+  <rect x="964" y="156" width="130" height="12" fill="#ffffff"/>
+  <rect x="972" y="218" width="70" height="8" fill="#123"/>
+  <rect x="972" y="234" width="60" height="6" fill="#456"/>
+  <rect x="1074" y="218" width="60" height="8" fill="#e22718"/>
+  <rect x="1016" y="306" width="130" height="8" fill="#123"/>
+  <rect x="964" y="350" width="190" height="6" fill="#456"/>
+  <rect x="964" y="364" width="170" height="6" fill="#456"/>
+  <rect x="964" y="378" width="180" height="6" fill="#456"/>
+    <rect x="1038" y="306" width="2" height="16" fill="#1c69d4"><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></rect>
+  <text x="1060" y="452" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">Word: igual que el PDF</text>
+  </g>
+  <text x="292" y="292" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="28" fill="#7e7e7e" text-anchor="middle">→</text>
+  <text x="597" y="292" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="28" fill="#7e7e7e" text-anchor="middle">+</text>
+  <text x="910" y="292" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="28" fill="#7e7e7e" text-anchor="middle">→</text>
+</svg>

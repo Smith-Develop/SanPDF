@@ -1,0 +1,38 @@
+<svg viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Privacidad: todo se procesa en el navegador, no se envía nada a ningún servidor">
+  <desc>Un PDF entra al navegador; un punto que intenta salir hacia la nube se detiene antes de llegar.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="320" fill="#000000"/>
+  <rect width="1200" height="320" fill="url(#grid)"/>
+  <text x="40" y="56" font-family="Consolas, 'Courier New', monospace" font-size="13" letter-spacing="2.5" fill="#7e7e7e" text-anchor="start">PRIVACIDAD</text>
+  <line x1="190" y1="51" x2="1160" y2="51" stroke="#3c3c3c"/>
+  <text x="40" y="100" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="26" font-weight="600" fill="#bbbbbb" text-anchor="start">Tus archivos no salen de tu ordenador.</text>
+  <rect x="120" y="140" width="300" height="140" fill="#141414" stroke="#ffffff" stroke-width="2"/>
+  <text x="270" y="200" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#ffffff" text-anchor="middle">TU NAVEGADOR</text>
+  <text x="270" y="228" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#bbbbbb" text-anchor="middle">pdf.js · pdf-lib · Tesseract · qpdf</text>
+  <circle cx="270" cy="256" r="6" fill="#0fa336"><animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite"/></circle>
+  <g>
+    <path d="M 40 170 L 70.8 170 L 82.0 181.2 L 82.0 224.6 L 40 224.6 Z" fill="#1f1f1f" stroke="#ffffff" stroke-width="2"/>
+    <path d="M 70.8 170 L 70.8 181.2 L 82.0 181.2" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <rect x="34.4" y="203.6" width="32.199999999999996" height="12.6" fill="#e22718"/>
+    <text x="50.5" y="213.04999999999998" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="7.699999999999999" font-weight="800" fill="#fff" text-anchor="middle">PDF</text>
+  </g>
+  <path id="pv" d="M 86 205 C 100 205, 110 210, 128 210" fill="none" stroke="#3c3c3c"/>
+  <circle r="4.5" fill="#ffffff" opacity="0">
+    <animateMotion dur="1.6s" begin="0.3s" repeatCount="indefinite"><mpath href="#pv"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="1.6s" begin="0.3s" repeatCount="indefinite"/>
+  </circle>
+  <g transform="translate(760,150)">
+    <path d="M 60 80 L 220 80 A 40 40 0 0 0 200 10 A 60 60 0 0 0 90 20 A 40 40 0 0 0 60 80 Z" fill="none" stroke="#7e7e7e" stroke-width="2" stroke-dasharray="6 6"/>
+    <line x1="40" y1="100" x2="240" y2="-10" stroke="#e22718" stroke-width="4"/>
+  </g>
+  <path id="pc" d="M 425 210 L 740 210" stroke="#3c3c3c" stroke-width="2" stroke-dasharray="5 5"/>
+  <circle r="5" fill="#e22718">
+    <animateMotion dur="2.4s" repeatCount="indefinite" keyPoints="0;0.85;0.85" keyTimes="0;0.7;1" calcMode="linear"><mpath href="#pc"/></animateMotion>
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.65;0.72;1" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <text x="1000" y="300" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="20" font-weight="800" fill="#ffffff" text-anchor="end">0 bytes enviados</text>
+</svg>

@@ -1,0 +1,11 @@
+# pruebas: documentos generados y resultados
+tests/fixtures/
+tests/out/
+tests/node_modules/
+tests/package-lock.json
+
+# sistema
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
