@@ -1,0 +1,70 @@
+<svg viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Instalador para Windows: copia la extensión, abre la página de extensiones, tú haces dos clics y se crea el acceso directo">
+  <desc>Cuatro tarjetas aparecen en orden; en la tercera se activa el interruptor del modo de desarrollador.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="400" fill="#000000"/>
+  <rect width="1200" height="400" fill="url(#grid)"/>
+  <text x="40" y="56" font-family="Consolas, 'Courier New', monospace" font-size="13" letter-spacing="2.5" fill="#7e7e7e" text-anchor="start">INSTALAR PDF G.CMD · WINDOWS</text>
+  <line x1="350" y1="51" x2="1160" y2="51" stroke="#3c3c3c"/>
+  <text x="40" y="100" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="26" font-weight="600" fill="#bbbbbb" text-anchor="start">Doble clic, dos clics en Chrome y listo.</text>
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.033;0.063;0.926;0.956;1" dur="9s" repeatCount="indefinite"/>
+    <rect x="40" y="150" width="255" height="190" fill="#141414" stroke="#3c3c3c" stroke-width="1"/>
+    <rect x="40" y="150" width="255" height="4" fill="#0066b1"/>
+    <circle cx="76" cy="196" r="18" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <text x="76" y="202" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="16" font-weight="800" fill="#ffffff" text-anchor="middle">1</text>
+  <text x="106" y="203" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="17" font-weight="800" fill="#ffffff" text-anchor="start">COPIA</text>
+  <text x="64" y="252" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#bbbbbb" text-anchor="start">La extensión a tu</text>
+  <text x="64" y="278" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#bbbbbb" text-anchor="start">carpeta de usuario</text>
+  </g>
+  <path id="in1" d="M 295 245 L 321 245" stroke="#3c3c3c" stroke-width="2" stroke-dasharray="4 4"/>
+  <circle r="4.5" fill="#1c69d4" opacity="0">
+    <animateMotion dur="1.6s" begin="1.9000000000000001s" repeatCount="indefinite"><mpath href="#in1"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="1.6s" begin="1.9000000000000001s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.211;0.241;0.926;0.956;1" dur="9s" repeatCount="indefinite"/>
+    <rect x="325" y="150" width="255" height="190" fill="#141414" stroke="#3c3c3c" stroke-width="1"/>
+    <rect x="325" y="150" width="255" height="4" fill="#1c69d4"/>
+    <circle cx="361" cy="196" r="18" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <text x="361" y="202" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="16" font-weight="800" fill="#ffffff" text-anchor="middle">2</text>
+  <text x="391" y="203" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="17" font-weight="800" fill="#ffffff" text-anchor="start">ABRE</text>
+  <text x="349" y="252" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#bbbbbb" text-anchor="start">chrome://extensions</text>
+  <text x="349" y="278" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#bbbbbb" text-anchor="start">con la ruta copiada</text>
+  </g>
+  <path id="in2" d="M 580 245 L 606 245" stroke="#3c3c3c" stroke-width="2" stroke-dasharray="4 4"/>
+  <circle r="4.5" fill="#e22718" opacity="0">
+    <animateMotion dur="1.6s" begin="3.5s" repeatCount="indefinite"><mpath href="#in2"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="1.6s" begin="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.389;0.419;0.926;0.956;1" dur="9s" repeatCount="indefinite"/>
+    <rect x="610" y="150" width="255" height="190" fill="#141414" stroke="#e22718" stroke-width="2"/>
+    <rect x="610" y="150" width="255" height="4" fill="#e22718"/>
+    <circle cx="646" cy="196" r="18" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <text x="646" y="202" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="16" font-weight="800" fill="#ffffff" text-anchor="middle">3</text>
+  <text x="676" y="203" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="17" font-weight="800" fill="#ffffff" text-anchor="start">TÚ: 2 CLICS</text>
+  <text x="634" y="252" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#bbbbbb" text-anchor="start">Modo desarrollador</text>
+  <text x="634" y="278" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#bbbbbb" text-anchor="start">Cargar descomprimida</text>
+  </g>
+  <path id="in3" d="M 865 245 L 891 245" stroke="#3c3c3c" stroke-width="2" stroke-dasharray="4 4"/>
+  <circle r="4.5" fill="#0fa336" opacity="0">
+    <animateMotion dur="1.6s" begin="5.1000000000000005s" repeatCount="indefinite"><mpath href="#in3"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="1.6s" begin="5.1000000000000005s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.567;0.597;0.926;0.956;1" dur="9s" repeatCount="indefinite"/>
+    <rect x="895" y="150" width="255" height="190" fill="#141414" stroke="#3c3c3c" stroke-width="1"/>
+    <rect x="895" y="150" width="255" height="4" fill="#0fa336"/>
+    <circle cx="931" cy="196" r="18" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <text x="931" y="202" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="16" font-weight="800" fill="#ffffff" text-anchor="middle">4</text>
+  <text x="961" y="203" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="17" font-weight="800" fill="#ffffff" text-anchor="start">LISTO</text>
+  <text x="919" y="252" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#bbbbbb" text-anchor="start">Acceso directo en</text>
+  <text x="919" y="278" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#bbbbbb" text-anchor="start">el escritorio</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.444;0.474;0.926;0.956;1" dur="9s" repeatCount="indefinite"/>
+    <rect x="634" y="300" width="44" height="22" rx="11" fill="#3c3c3c"><animate attributeName="fill" values="#3c3c3c;#3c3c3c;#1c69d4;#1c69d4" keyTimes="0;0.5;0.55;1" dur="9s" repeatCount="indefinite"/></rect>
+    <circle cx="645" cy="311" r="8" fill="#fff"><animate attributeName="cx" values="645;645;667;667" keyTimes="0;0.5;0.55;1" dur="9s" repeatCount="indefinite"/></circle>
+    <rect x="694" y="298" width="150" height="26" fill="none" stroke="#ffffff"/>
+  <text x="769" y="316" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#ffffff" text-anchor="middle">Cargar descomprimida</text>
+  </g>
+</svg>

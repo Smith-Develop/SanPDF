@@ -16,14 +16,14 @@
 ### Extensión de Chrome con 28 herramientas para PDF. Todo se procesa en tu ordenador: tus archivos nunca salen de él.
 
 ![Chrome](https://img.shields.io/badge/Chrome-Manifest_V3-1c69d4?style=for-the-badge&logo=googlechrome&logoColor=white)
-![Versión](https://img.shields.io/badge/versión-1.3.0-0066b1?style=for-the-badge)
+![Versión](https://img.shields.io/badge/versión-1.3.1-0066b1?style=for-the-badge)
 ![Herramientas](https://img.shields.io/badge/herramientas-28-e22718?style=for-the-badge)
 ![Privacidad](https://img.shields.io/badge/archivos_subidos-0-0fa336?style=for-the-badge)
 
 <table>
   <tr>
     <td align="right"><b>🚀 Empezar</b></td>
-    <td align="center"><a href="#-instalación">📦 Instalación</a></td>
+    <td align="center"><a href="#-instalación">📦 Instalación (Windows: 1 doble clic)</a></td>
     <td align="center"><a href="#-en-tres-pasos">👣 En tres pasos</a></td>
     <td align="center"><a href="#%EF%B8%8F-acceso-directo-en-el-escritorio">🖥️ Acceso directo</a></td>
   </tr>
@@ -53,12 +53,27 @@
 
 ## 📦 Instalación
 
-1. Descarga este repositorio (**Code → Download ZIP**) y descomprímelo en una carpeta que no vayas a borrar.
-2. Abre `chrome://extensions` y activa el **Modo de desarrollador** (arriba a la derecha).
-3. Pulsa **Cargar descomprimida** y elige la carpeta **`pdf-g`**.
-4. Fija el icono en la barra de Chrome: al pulsarlo se abre PDF G en una pestaña.
+### ⚡ Windows: con el instalador
 
-> Funciona en Chrome, Edge y Brave (cualquier navegador basado en Chromium con Manifest V3).
+1. Descarga este repositorio (**Code → Download ZIP**) y descomprímelo.
+2. Haz doble clic en **`Instalar PDF G.cmd`** (si Windows avisa: *Más información → Ejecutar de todas formas*).
+3. Se abre la página de extensiones con la ruta ya copiada. Haz los **dos clics** que Chrome exige hacer a mano: activa **Modo de desarrollador** y pulsa **Cargar descomprimida** → `Ctrl+V` en la barra de dirección → **Seleccionar carpeta**.
+4. El instalador lo detecta solo, **crea el acceso directo "PDF G" en el escritorio** y abre la aplicación.
+
+<img src="./docs/diagrams/instalador.svg" width="100%" alt="Instalador para Windows: copia la extensión, abre la página de extensiones con la ruta copiada, tú activas el modo de desarrollador y pulsas Cargar descomprimida, y se crea el acceso directo."/>
+
+- Funciona con **Chrome, Edge y Brave** (si tienes varios, te pregunta en cuál).
+- La extensión se copia a `%LOCALAPPDATA%\PDF G\extension`, así que puedes borrar la carpeta descargada.
+- **Para actualizar**, descarga la versión nueva y vuelve a ejecutar el instalador: reemplaza los archivos sin repetir los clics.
+
+> **¿Por qué no es 100 % automático?** Chrome no deja que ningún programa active el modo de desarrollador ni cargue extensiones por su cuenta (desde Chrome 137 ignora incluso la opción `--load-extension`). Saltarse esa protección exigiría manipular archivos protegidos del perfil, que es lo que hace el malware. La instalación en un clic real llegará publicando PDF G en la Chrome Web Store.
+
+### 🛠️ Manual (cualquier sistema)
+
+1. Descomprime el ZIP en una carpeta que no vayas a borrar.
+2. Abre `chrome://extensions` y activa el **Modo de desarrollador**.
+3. Pulsa **Cargar descomprimida** y elige la carpeta **`pdf-g`**.
+4. Fija el icono en la barra de Chrome: al pulsarlo se abre PDF G.
 
 ## 👣 En tres pasos
 

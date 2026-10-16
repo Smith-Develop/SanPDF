@@ -1,5 +1,8 @@
 # Cambios
 
+## 1.3.1
+- **Instalador para Windows** (`Instalar PDF G.cmd`): copia la extensión a la carpeta del usuario, abre la página de extensiones de Chrome, Edge o Brave con la ruta en el portapapeles, detecta cuándo la has cargado y crea el acceso directo en el escritorio (con el perfil correcto) y abre PDF G. Volver a ejecutarlo actualiza la extensión.
+
 ## 1.3.0
 - **OCR a Word:** una sola fuente por línea (Arial o Arial Narrow) y espaciado moderado; si el texto no cabe, la letra se reduce un poco en vez de montar letras. Se elimina Bahnschrift, que Word interpretaba distinto.
 - **OCR:** tres pasadas (imagen completa y reducida) para leer también títulos grandes y texto claro sobre fondo oscuro.

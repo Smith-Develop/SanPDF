@@ -126,7 +126,7 @@ def hero():
 
 def como_funciona():
     W, H = 1200, 380
-    steps = [("1", "Instala", ["chrome://extensions", "Modo desarrollador →", "Cargar descomprimida"], B1),
+    steps = [("1", "Instala", ["Doble clic en", "Instalar PDF G.cmd", "y dos clics en Chrome"], B1),
              ("2", "Suelta tu PDF", ["Arrástralo a la herramienta", "o elige uno con un clic"], B2),
              ("3", "Descarga", ["Word, Excel, PDF…", "en Descargas/PDF G"], OK)]
     b = [label(40, 56, "EN TRES PASOS"),
@@ -391,10 +391,44 @@ def acceso_directo():
                "Un cursor pulsa el botón, aparece el instalador y después el icono de PDF G en el escritorio.", "\n".join(b))
 
 
+def instalador():
+    W, H, C = 1200, 400, 9
+    steps = [("1", "COPIA", ["La extensión a tu", "carpeta de usuario"], B1, False),
+             ("2", "ABRE", ["chrome://extensions", "con la ruta copiada"], B2, False),
+             ("3", "TÚ: 2 CLICS", ["Modo desarrollador", "Cargar descomprimida"], RED, True),
+             ("4", "LISTO", ["Acceso directo en", "el escritorio"], OK, False)]
+    b = [label(40, 56, "INSTALAR PDF G.CMD · WINDOWS"), f'  <line x1="350" y1="51" x2="1160" y2="51" stroke="{LINE}"/>',
+         title(40, 100, "Doble clic, dos clics en Chrome y listo.", 26, BODY, weight=600)]
+    for i, (n, t, lines, col, you) in enumerate(steps):
+        x = 40 + i * 285
+        t0 = 0.3 + i * 1.6
+        if i:
+            pid = f"in{i}"
+            b.append(f'  <path id="{pid}" d="M {x - 30} 245 L {x - 4} 245" stroke="{LINE}" stroke-width="2" stroke-dasharray="4 4"/>')
+            b.append(dot(pid, col, 1.6, t0))
+        b.append(f'''  <g opacity="0">{loop_show(C, t0, 8.6)}
+    <rect x="{x}" y="150" width="255" height="190" fill="{CARD}" stroke="{col if you else LINE}" stroke-width="{2 if you else 1}"/>
+    <rect x="{x}" y="150" width="255" height="4" fill="{col}"/>
+    <circle cx="{x + 36}" cy="196" r="18" fill="none" stroke="{INK}" stroke-width="2"/>
+{title(x + 36, 202, n, 16, anchor="middle")}
+{title(x + 66, 203, t, 17)}
+''' + "\n".join(text(x + 24, 252 + k * 26, l, 15) for k, l in enumerate(lines)) + "\n  </g>")
+    # interruptor del modo desarrollador que se activa en el paso 3
+    x3 = 40 + 2 * 285 + 24
+    b.append(f'''  <g opacity="0">{loop_show(C, 4.0, 8.6)}
+    <rect x="{x3}" y="300" width="44" height="22" rx="11" fill="{LINE}"><animate attributeName="fill" values="{LINE};{LINE};{B2};{B2}" keyTimes="0;0.5;0.55;1" dur="{C}s" repeatCount="indefinite"/></rect>
+    <circle cx="{x3 + 11}" cy="311" r="8" fill="#fff"><animate attributeName="cx" values="{x3 + 11};{x3 + 11};{x3 + 33};{x3 + 33}" keyTimes="0;0.5;0.55;1" dur="{C}s" repeatCount="indefinite"/></circle>
+    <rect x="{x3 + 60}" y="298" width="150" height="26" fill="none" stroke="{INK}"/>
+{text(x3 + 135, 316, "Cargar descomprimida", 12, INK, "middle")}
+  </g>''')
+    return svg(W, H, "Instalador para Windows: copia la extensión, abre la página de extensiones, tú haces dos clics y se crea el acceso directo",
+               "Cuatro tarjetas aparecen en orden; en la tercera se activa el interruptor del modo de desarrollador.", "\n".join(b))
+
+
 if __name__ == "__main__":
     OUT.mkdir(parents=True, exist_ok=True)
     for name, fn in {"hero": hero, "como-funciona": como_funciona, "pdf-a-word": pdf_a_word, "ocr-a-word": ocr_a_word,
                      "pdf-a-excel": pdf_a_excel, "herramientas": herramientas, "privacidad": privacidad,
-                     "acceso-directo": acceso_directo}.items():
+                     "acceso-directo": acceso_directo, "instalador": instalador}.items():
         (OUT / f"{name}.svg").write_text(fn(), encoding="utf-8")
         print("ok", name)
