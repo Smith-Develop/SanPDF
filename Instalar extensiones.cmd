@@ -18,7 +18,8 @@ exit /b
 $ErrorActionPreference = 'Stop'
 $Host.UI.RawUI.WindowTitle = 'Instalar extensiones'
 function Say($text, $color = 'Gray') { Write-Host $text -ForegroundColor $color }
-function Fail($text) { Say ''; Say $text 'Red'; Read-Host 'Pulsa Intro para salir' | Out-Null; exit 1 }
+# Un error detiene la operacion en curso; el menu lo muestra y deja volver a empezar
+function Fail($text) { throw [System.OperationCanceledException]::new($text) }
 function Pick($title, $items, $label) {
   Say $title 'Cyan'
   for ($i = 0; $i -lt $items.Count; $i++) { Say ("      {0}. {1}" -f ($i + 1), (& $label $items[$i])) }
@@ -298,21 +299,37 @@ function Uninstall-Extension($installed) {
 }
 
 # =============================================================================
-#  MENU
+#  MENU (se repite hasta que eliges cerrar)
 # =============================================================================
-Say ''
-Say '  Instalador de extensiones' 'White'
-Say '  =========================' 'DarkGray'
-Say "  Carpeta de instalacion: $root" 'DarkGray'
-Say ''
-$installed = @(Get-Installed)
-if ($installed.Count) {
-  Say 'Que quieres hacer?' 'Cyan'
-  Say '      1. Instalar o actualizar una extension'
-  Say ("      2. Eliminar una extension instalada ({0})" -f (($installed | ForEach-Object { $_.Name }) -join ', '))
-  do { $op = Read-Host '      Escribe el numero y pulsa Intro' } until ($op -in @('1', '2'))
+$first = $true
+while ($true) {
+  $Host.UI.RawUI.WindowTitle = 'Instalar extensiones'
+  if (-not $first) { Clear-Host }
   Say ''
-} else { $op = '1' }
-if ($op -eq '2') { Uninstall-Extension $installed } else { Install-Extension }
-Say ''
-Start-Sleep -Seconds 4
+  Say '  Instalador de extensiones' 'White'
+  Say '  =========================' 'DarkGray'
+  Say "  Carpeta de instalacion: $root" 'DarkGray'
+  Say ''
+  $installed = @(Get-Installed)
+  if ($first -and -not $installed.Count) { $op = '1' }
+  else {
+    Say 'Que quieres hacer?' 'Cyan'
+    Say '      1. Instalar o actualizar una extension'
+    if ($installed.Count) { Say ("      2. Eliminar una extension instalada ({0})" -f (($installed | ForEach-Object { $_.Name }) -join ', ')) }
+    Say '      0. Cerrar'
+    $valid = if ($installed.Count) { @('0', '1', '2') } else { @('0', '1') }
+    do { $op = Read-Host '      Escribe el numero y pulsa Intro' } until ($op -in $valid)
+    Say ''
+  }
+  $first = $false
+  if ($op -eq '0') { break }
+  try { if ($op -eq '2') { Uninstall-Extension $installed } else { Install-Extension } }
+  catch [System.OperationCanceledException] { Say ''; Say $_.Exception.Message 'Red' }
+  catch { Say ''; Say "Error inesperado: $($_.Exception.Message)" 'Red' }
+  Say ''
+  Say 'Y ahora?' 'Cyan'
+  Say '      1. Volver al menu principal'
+  Say '      2. Cerrar'
+  do { $next = Read-Host '      Escribe el numero y pulsa Intro' } until ($next -in @('1', '2'))
+  if ($next -eq '2') { break }
+}
