@@ -126,7 +126,7 @@ def hero():
 
 def como_funciona():
     W, H = 1200, 380
-    steps = [("1", "Instala", ["Doble clic en", "Instalar PDF G.cmd", "y dos clics en Chrome"], B1),
+    steps = [("1", "Instala", ["Doble clic en", "Instalar extensiones.cmd", "y dos clics en Chrome"], B1),
              ("2", "Suelta tu PDF", ["Arrástralo a la herramienta", "o elige uno con un clic"], B2),
              ("3", "Descarga", ["Word, Excel, PDF…", "en Descargas/PDF G"], OK)]
     b = [label(40, 56, "EN TRES PASOS"),
@@ -393,11 +393,11 @@ def acceso_directo():
 
 def instalador():
     W, H, C = 1200, 400, 9
-    steps = [("1", "COPIA", ["La extensión a tu", "carpeta de usuario"], B1, False),
+    steps = [("1", "ELIGE Y COPIA", ["La extensión que elijas", "a tu carpeta de usuario"], B1, False),
              ("2", "ABRE", ["chrome://extensions", "con la ruta copiada"], B2, False),
              ("3", "TÚ: 2 CLICS", ["Modo desarrollador", "Cargar descomprimida"], RED, True),
              ("4", "LISTO", ["Acceso directo en", "el escritorio"], OK, False)]
-    b = [label(40, 56, "INSTALAR PDF G.CMD · WINDOWS"), f'  <line x1="350" y1="51" x2="1160" y2="51" stroke="{LINE}"/>',
+    b = [label(40, 56, "INSTALAR EXTENSIONES.CMD · WINDOWS"), f'  <line x1="420" y1="51" x2="1160" y2="51" stroke="{LINE}"/>',
          title(40, 100, "Doble clic, dos clics en Chrome y listo.", 26, BODY, weight=600)]
     for i, (n, t, lines, col, you) in enumerate(steps):
         x = 40 + i * 285

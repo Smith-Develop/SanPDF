@@ -17,7 +17,7 @@
   <text x="80" y="197" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#ffffff" text-anchor="middle">1</text>
   <text x="116" y="198" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="20" font-weight="800" fill="#ffffff" text-anchor="start">INSTALA</text>
   <text x="68" y="248" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#bbbbbb" text-anchor="start">Doble clic en</text>
-  <text x="68" y="274" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#bbbbbb" text-anchor="start">Instalar PDF G.cmd</text>
+  <text x="68" y="274" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#bbbbbb" text-anchor="start">Instalar extensiones.cmd</text>
   <text x="68" y="300" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#bbbbbb" text-anchor="start">y dos clics en Chrome</text>
   </g>
   <path id="cf1" d="M 375 230 L 421 230" stroke="#3c3c3c" stroke-width="2" stroke-dasharray="5 5"/>

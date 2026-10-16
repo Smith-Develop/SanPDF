@@ -16,7 +16,7 @@
 ### Extensión de Chrome con 28 herramientas para PDF. Todo se procesa en tu ordenador: tus archivos nunca salen de él.
 
 ![Chrome](https://img.shields.io/badge/Chrome-Manifest_V3-1c69d4?style=for-the-badge&logo=googlechrome&logoColor=white)
-![Versión](https://img.shields.io/badge/versión-1.3.1-0066b1?style=for-the-badge)
+![Versión](https://img.shields.io/badge/versión-1.3.2-0066b1?style=for-the-badge)
 ![Herramientas](https://img.shields.io/badge/herramientas-28-e22718?style=for-the-badge)
 ![Privacidad](https://img.shields.io/badge/archivos_subidos-0-0fa336?style=for-the-badge)
 
@@ -56,7 +56,7 @@
 ### ⚡ Windows: con el instalador
 
 1. Descarga este repositorio (**Code → Download ZIP**) y descomprímelo.
-2. Haz doble clic en **`Instalar PDF G.cmd`** (si Windows avisa: *Más información → Ejecutar de todas formas*).
+2. Haz doble clic en **`Instalar extensiones.cmd`** y elige **PDF G** en la lista (si Windows avisa: *Más información → Ejecutar de todas formas*).
 3. Se abre la página de extensiones con la ruta ya copiada. Haz los **dos clics** que Chrome exige hacer a mano: activa **Modo de desarrollador** y pulsa **Cargar descomprimida** → `Ctrl+V` en la barra de dirección → **Seleccionar carpeta**.
 4. El instalador lo detecta solo, **crea el acceso directo "PDF G" en el escritorio** y abre la aplicación.
 
@@ -64,7 +64,21 @@
 
 - Funciona con **Chrome, Edge y Brave** (si tienes varios, te pregunta en cuál).
 - La extensión se copia a `%LOCALAPPDATA%\PDF G\extension`, así que puedes borrar la carpeta descargada.
-- **Para actualizar**, descarga la versión nueva y vuelve a ejecutar el instalador: reemplaza los archivos sin repetir los clics.
+- **Para actualizar**, sustituye la carpeta por la versión nueva y vuelve a ejecutar el instalador: reemplaza los archivos sin repetir los clics.
+- Como el instalador crea el acceso directo, PDF G ya no muestra su aviso de bienvenida al instalarse así.
+
+#### Instalar otras extensiones con el mismo archivo
+
+`Instalar extensiones.cmd` sirve para cualquier extensión: lista todas las carpetas que tengan un `manifest.json` junto a él y te deja elegir.
+
+```
+Mis extensiones/
+├── Instalar extensiones.cmd
+├── pdf-g/            → "PDF G  v1.3.2"
+└── incidencias-g/    → "Incidencias G  v0.4.2"
+```
+
+Para añadir otra, copia su carpeta al lado: no hay que editar el `.cmd`. Del `manifest.json` toma el nombre (también si está traducido con `__MSG_…__`), la versión y el icono del acceso directo. El acceso directo abre `app.html`, `index.html`, la ventana emergente o la página de opciones, la primera que exista. Cada extensión se copia a `%LOCALAPPDATA%\<nombre>\extension`.
 
 > **¿Por qué no es 100 % automático?** Chrome no deja que ningún programa active el modo de desarrollador ni cargue extensiones por su cuenta (desde Chrome 137 ignora incluso la opción `--load-extension`). Saltarse esa protección exigiría manipular archivos protegidos del perfil, que es lo que hace el malware. La instalación en un clic real llegará publicando PDF G en la Chrome Web Store.
 

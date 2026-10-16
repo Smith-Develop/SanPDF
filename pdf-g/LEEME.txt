@@ -1,10 +1,10 @@
-PDF G by Smith-Develop · v1.3.1
+PDF G by Smith-Develop · v1.3.2
 =============================
 Convierte, edita y crea PDF dentro de Chrome. Todo se procesa en tu ordenador:
 los archivos nunca se suben a ningún sitio.
 
 INSTALAR
-Windows (recomendado): doble clic en "Instalar PDF G.cmd" (junto a la carpeta pdf-g).
+Windows (recomendado): doble clic en "Instalar extensiones.cmd" (junto a la carpeta pdf-g) y elige PDF G.
   Se abre la pagina de extensiones con la ruta copiada: activa "Modo de desarrollador",
   pulsa "Cargar descomprimida", Ctrl+V en la barra de direccion y "Seleccionar carpeta".
   El instalador lo detecta, crea el acceso directo en el escritorio y abre PDF G.

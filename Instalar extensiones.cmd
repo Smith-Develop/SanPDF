@@ -1,10 +1,13 @@
 @echo off
 rem ==========================================================================
-rem  PDF G - instalador para Windows (Chrome, Edge o Brave)
-rem  1. Copia la extension a %LOCALAPPDATA%\PDF G\extension
+rem  Instalador de extensiones para Windows (Chrome, Edge o Brave)
+rem  Detecta las carpetas con manifest.json que hay junto a este archivo
+rem  (pdf-g, incidencias-g...) y te deja elegir cual instalar:
+rem  1. Copia la extension a %LOCALAPPDATA%\<nombre de la extension>\extension
 rem  2. Abre la pagina de extensiones del navegador con la ruta en el portapapeles
 rem  3. Espera a que la cargues (Modo de desarrollador > Cargar descomprimida)
-rem  4. Crea el acceso directo en el escritorio y abre PDF G
+rem  4. Crea el acceso directo en el escritorio y abre la extension
+rem  Para anadir otra extension basta con copiar su carpeta junto a este archivo.
 rem  Chrome no permite que un programa active el modo de desarrollador ni cargue
 rem  extensiones por si solo: esos dos clics los tienes que hacer tu.
 rem ==========================================================================
@@ -15,27 +18,65 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command "$t=[IO.File]::ReadAllTex
 exit /b
 #PS#
 $ErrorActionPreference = 'Stop'
-$Host.UI.RawUI.WindowTitle = 'Instalar PDF G'
+$Host.UI.RawUI.WindowTitle = 'Instalar extensiones'
 function Say($text, $color = 'Gray') { Write-Host $text -ForegroundColor $color }
 function Fail($text) { Say ''; Say $text 'Red'; Read-Host 'Pulsa Intro para salir' | Out-Null; exit 1 }
 
 Say ''
-Say '  PDF G  -  instalador' 'White'
-Say '  ====================' 'DarkGray'
+Say '  Instalador de extensiones' 'White'
+Say '  =========================' 'DarkGray'
 Say ''
 
-# --- 1. Carpeta de la extension (pdf-g junto a este archivo) -----------------
+# --- 1. Extensiones disponibles: carpetas con manifest.json junto a este archivo ---
+# Del manifest.json se toman el nombre (tambien si esta traducido con __MSG_...__), la version y el icono.
+function Read-Manifest($dir) {
+  try { $m = [IO.File]::ReadAllText((Join-Path $dir 'manifest.json')) | ConvertFrom-Json } catch { return $null }
+  $name = [string]$m.name
+  if ($name -match '^__MSG_(.+)__$') {
+    $key = $Matches[1]; $loc = if ($m.default_locale) { $m.default_locale } else { 'en' }
+    try {
+      $msgs = [IO.File]::ReadAllText((Join-Path $dir "_locales\$loc\messages.json")) | ConvertFrom-Json
+      $hit = $msgs.PSObject.Properties | Where-Object { $_.Name -ieq $key } | Select-Object -First 1
+      $name = if ($hit) { [string]$hit.Value.message } else { '' }
+    } catch { $name = '' }
+  }
+  if (-not $name) { $name = Split-Path $dir -Leaf }
+  # icono mas grande declarado en "icons"
+  $icon = $null
+  if ($m.icons) { $icon = $m.icons.PSObject.Properties | Sort-Object { [int]$_.Name } -Descending | Select-Object -First 1 | ForEach-Object { [string]$_.Value } }
+  # pagina que abre el acceso directo: app.html, index.html, la ventana emergente o las opciones
+  $page = $null
+  foreach ($c in @('app.html', 'index.html', $m.action.default_popup, $m.browser_action.default_popup, $m.options_page, $m.options_ui.page)) {
+    if ($c -and (Test-Path (Join-Path $dir $c))) { $page = ([string]$c).TrimStart('/'); break }
+  }
+  return @{ Dir = $dir; Name = $name.Trim(); Version = [string]$m.version; Icon = $icon; Page = $page }
+}
 $here = $env:PDFG_DIR.TrimEnd('\')
-$src = $null
-foreach ($c in @((Join-Path $here 'pdf-g'), $here)) { if (Test-Path (Join-Path $c 'manifest.json')) { $src = $c; break } }
-if (-not $src) { Fail 'No encuentro la carpeta "pdf-g" junto a este archivo. Descomprime el ZIP completo y vuelve a ejecutarlo.' }
-
-$dest = Join-Path $env:LOCALAPPDATA 'PDF G\extension'
-Say '[1/4] Copiando la extension a:' 'Cyan'
+$exts = @()
+foreach ($d in Get-ChildItem -Path $here -Directory | Sort-Object Name) {
+  if (Test-Path (Join-Path $d.FullName 'manifest.json')) { $x = Read-Manifest $d.FullName; if ($x) { $exts += $x } }
+}
+if (-not $exts.Count -and (Test-Path (Join-Path $here 'manifest.json'))) { $exts += (Read-Manifest $here) }
+if (-not $exts.Count) { Fail 'No hay ninguna extension junto a este archivo: copia aqui la carpeta de la extension (la que tiene manifest.json).' }
+$ext = $exts[0]
+if ($exts.Count -gt 1) {
+  Say 'Que extension quieres instalar?' 'Cyan'
+  for ($i = 0; $i -lt $exts.Count; $i++) { Say ("      {0}. {1}  v{2}   ({3})" -f ($i + 1), $exts[$i].Name, $exts[$i].Version, (Split-Path $exts[$i].Dir -Leaf)) }
+  do { $n = Read-Host '      Escribe el numero y pulsa Intro' } until ($n -match '^\d+$' -and [int]$n -ge 1 -and [int]$n -le $exts.Count)
+  $ext = $exts[[int]$n - 1]
+  Say ''
+}
+$Host.UI.RawUI.WindowTitle = "Instalar $($ext.Name)"
+$src = $ext.Dir
+$safe = ($ext.Name -replace '[\\/:*?"<>|]', '').Trim(); if (-not $safe) { $safe = Split-Path $src -Leaf }
+$dest = Join-Path $env:LOCALAPPDATA "$safe\extension"
+Say "[1/4] Copiando $($ext.Name) v$($ext.Version) a:" 'Cyan'
 Say "      $dest"
 New-Item -ItemType Directory -Force -Path $dest | Out-Null
 robocopy "$src" "$dest" /MIR /NFL /NDL /NJH /NJS /NP | Out-Null
 if ($LASTEXITCODE -ge 8) { Fail 'No se pudieron copiar los archivos de la extension.' }
+# marca para la extension: se instalo con este script (no hace falta su aviso de acceso directo)
+[IO.File]::WriteAllText((Join-Path $dest 'instalado.json'), '{"instalador":"cmd"}')
 
 # --- 2. Navegador -------------------------------------------------------------
 $pf86 = ${env:ProgramFiles(x86)}
@@ -127,7 +168,7 @@ function Open-ExtensionsPage {
 $profileDir = Find-Profile
 if ($profileDir) {
   Say ''
-  Say "[3/4] PDF G ya estaba cargada en $($br.Name): archivos actualizados." 'Green'
+  Say "[3/4] $($ext.Name) ya estaba cargada en $($br.Name): archivos actualizados." 'Green'
   Say '      Si estaba abierta, pulsa "Actualizar" en la pagina de extensiones o reinicia el navegador.'
 } else {
   Set-Clipboard -Value $dest
@@ -153,24 +194,34 @@ if ($profileDir) {
   Say "      Cargada en $($br.Name)." 'Green'
 }
 
-# --- 4. Acceso directo en el escritorio y abrir PDF G --------------------------
-$url = "chrome-extension://$id/app.html"
+# --- 4. Acceso directo en el escritorio y abrir la extension ---------------------
+if (-not $ext.Page) {
+  Say ''
+  Say "[4/4] $($ext.Name) no tiene pagina propia (app.html, index.html, ventana emergente u opciones): no se crea acceso directo." 'Yellow'
+  Say '      Usala desde su icono en la barra del navegador.'
+  Say ''; Start-Sleep -Seconds 4; exit 0
+}
+$url = "chrome-extension://$id/$($ext.Page)"
 $args1 = "--profile-directory=""$profileDir"" --app=$url"
-$ico = Join-Path $env:LOCALAPPDATA 'PDF G\pdfg.ico'
-$png = [IO.File]::ReadAllBytes((Join-Path $dest 'icons\128.png'))
-$head = [byte[]](0, 0, 1, 0, 1, 0, 128, 128, 0, 0, 1, 0, 32, 0) + [BitConverter]::GetBytes([uint32]$png.Length) + [BitConverter]::GetBytes([uint32]22)
-[IO.File]::WriteAllBytes($ico, [byte[]]($head + $png))
-$lnk = Join-Path ([Environment]::GetFolderPath('Desktop')) 'PDF G.lnk'
-$s = (New-Object -ComObject WScript.Shell).CreateShortcut($lnk)
+$s = (New-Object -ComObject WScript.Shell).CreateShortcut((Join-Path ([Environment]::GetFolderPath('Desktop')) "$safe.lnk"))
 $s.TargetPath = $br.Path
 $s.Arguments = $args1
-$s.IconLocation = $ico
-$s.Description = 'PDF G: convierte, edita y firma PDF'
+$s.Description = $ext.Name
+# icono: el PNG del manifest dentro de un .ico (Windows lo admite desde Vista)
+if ($ext.Icon -and (Test-Path (Join-Path $dest $ext.Icon))) {
+  $ico = Join-Path $env:LOCALAPPDATA "$safe\icono.ico"
+  $png = [IO.File]::ReadAllBytes((Join-Path $dest $ext.Icon))
+  $wh = [Math]::Min(256, [int]$png[19] + 256 * [int]$png[18])         # ancho del PNG (cabecera IHDR)
+  $b = if ($wh -ge 256) { 0 } else { $wh }
+  $head = [byte[]](0, 0, 1, 0, 1, 0, $b, $b, 0, 0, 1, 0, 32, 0) + [BitConverter]::GetBytes([uint32]$png.Length) + [BitConverter]::GetBytes([uint32]22)
+  [IO.File]::WriteAllBytes($ico, [byte[]]($head + $png))
+  $s.IconLocation = $ico
+} else { $s.IconLocation = $br.Path }
 $s.Save()
 Say ''
-Say '[4/4] Acceso directo "PDF G" creado en el escritorio.' 'Green'
+Say "[4/4] Acceso directo ""$safe"" creado en el escritorio." 'Green'
 Start-Process -FilePath $br.Path -ArgumentList $args1
 Say ''
-Say '  Listo. Para actualizar PDF G en el futuro, vuelve a ejecutar este archivo.' 'White'
+Say "  Listo. Para actualizar $($ext.Name), sustituye su carpeta y vuelve a ejecutar este archivo." 'White'
 Say ''
 Start-Sleep -Seconds 4
