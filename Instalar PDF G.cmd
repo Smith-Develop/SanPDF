@@ -80,6 +80,49 @@ function Find-Profile {
   return $null
 }
 
+# Abre la pagina de extensiones. Chrome y Edge ignoran las direcciones chrome:// y edge:// que les
+# pasa otro programa, asi que, si no se abre sola, se escribe en una pestana nueva como lo haria una persona
+# (solo si la ventana activa es del navegador, para no escribir en otra aplicacion).
+Add-Type -TypeDefinition @'
+using System; using System.Text; using System.Runtime.InteropServices;
+public static class PdfgWin {
+  [DllImport("user32.dll")] public static extern IntPtr GetForegroundWindow();
+  [DllImport("user32.dll")] public static extern bool SetForegroundWindow(IntPtr h);
+  [DllImport("user32.dll")] public static extern uint GetWindowThreadProcessId(IntPtr h, out uint pid);
+  [DllImport("user32.dll", CharSet = CharSet.Unicode)] public static extern int GetWindowText(IntPtr h, StringBuilder s, int n);
+  public static string Title(IntPtr h) { var s = new StringBuilder(512); GetWindowText(h, s, 512); return s.ToString(); }
+}
+'@
+function Get-ForegroundBrowser {
+  $h = [PdfgWin]::GetForegroundWindow(); $procId = [uint32]0
+  [void][PdfgWin]::GetWindowThreadProcessId($h, [ref]$procId)
+  $p = Get-Process -Id $procId -ErrorAction SilentlyContinue
+  if ($p -and $p.ProcessName -ieq [IO.Path]::GetFileNameWithoutExtension($br.Path)) { return $h }
+  return [IntPtr]::Zero
+}
+function Open-ExtensionsPage {
+  $name = [IO.Path]::GetFileNameWithoutExtension($br.Path)
+  Start-Process -FilePath $br.Path -ArgumentList '--new-window', $br.Page
+  $ws = New-Object -ComObject WScript.Shell
+  for ($i = 0; $i -lt 30; $i++) {
+    Start-Sleep -Milliseconds 500
+    $h = Get-ForegroundBrowser
+    if ($h -eq [IntPtr]::Zero) {
+      # la ventana nueva puede no pasar al frente: se trae la mas reciente del navegador
+      $w = Get-Process -Name $name -ErrorAction SilentlyContinue | Where-Object { $_.MainWindowHandle -ne [IntPtr]::Zero } | Sort-Object StartTime -Descending | Select-Object -First 1
+      if ($w) { [void][PdfgWin]::SetForegroundWindow($w.MainWindowHandle) }
+      continue
+    }
+    Start-Sleep -Milliseconds 800
+    if ([PdfgWin]::Title($h) -match 'Extensi') { return $true }      # ya esta en la pagina de extensiones
+    $ws.SendKeys('^t'); Start-Sleep -Milliseconds 400
+    if ((Get-ForegroundBrowser) -eq [IntPtr]::Zero) { return $false }
+    $ws.SendKeys($br.Page); Start-Sleep -Milliseconds 200; $ws.SendKeys('{ENTER}')
+    return $true
+  }
+  return $false
+}
+
 # --- 3. Carga en el navegador ----------------------------------------------------
 $profileDir = Find-Profile
 if ($profileDir) {
@@ -88,9 +131,10 @@ if ($profileDir) {
   Say '      Si estaba abierta, pulsa "Actualizar" en la pagina de extensiones o reinicia el navegador.'
 } else {
   Set-Clipboard -Value $dest
-  Start-Process -FilePath $br.Path -ArgumentList $br.Page
+  $opened = Open-ExtensionsPage
   Say ''
-  Say "[3/4] Se ha abierto la pagina de extensiones de $($br.Name). Haz esto:" 'Cyan'
+  if ($opened) { Say "[3/4] Se ha abierto $($br.Page) en $($br.Name). Haz esto:" 'Cyan' }
+  else { Say "[3/4] Abre $($br.Name) y escribe $($br.Page) en la barra de direcciones. Despues:" 'Yellow' }
   Say ''
   Say '      1. Activa "Modo de desarrollador" (interruptor arriba a la derecha).' 'White'
   Say '      2. Pulsa "Cargar descomprimida" (o "Cargar sin empaquetar").' 'White'
