@@ -1,5 +1,9 @@
 # Cambios
 
+## Instalador (sin cambios en la extensión)
+- `Instalar extensiones.cmd` instala todas las extensiones en `%LOCALAPPDATA%\Extensiones\<nombre>`.
+- Nueva opción **Eliminar una extensión instalada**: abre la página de extensiones para quitarla, espera a que desaparezca del navegador y borra su carpeta y su acceso directo. También lista las instalaciones antiguas (`%LOCALAPPDATA%\<nombre>\extension`) para limpiarlas.
+
 ## 1.3.2
 - **Instalador genérico** `Instalar extensiones.cmd` (sustituye a `Instalar PDF G.cmd`): lista las carpetas con `manifest.json` que hay junto a él (pdf-g, incidencias-g…) para elegir cuál instalar, sin editar el archivo. Toma del manifiesto el nombre (también traducido con `__MSG_…__`), la versión y el icono; el acceso directo abre `app.html`, `index.html`, la ventana emergente o las opciones.
 - PDF G ya no muestra el aviso para crear el acceso directo cuando se instala con el `.cmd` (el instalador deja `instalado.json` y crea el acceso directo él mismo). Instalada a mano, el aviso sigue apareciendo.

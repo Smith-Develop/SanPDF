@@ -63,7 +63,8 @@
 <img src="./docs/diagrams/instalador.svg" width="100%" alt="Instalador para Windows: copia la extensión, abre la página de extensiones con la ruta copiada, tú activas el modo de desarrollador y pulsas Cargar descomprimida, y se crea el acceso directo."/>
 
 - Funciona con **Chrome, Edge y Brave** (si tienes varios, te pregunta en cuál).
-- La extensión se copia a `%LOCALAPPDATA%\PDF G\extension`, así que puedes borrar la carpeta descargada.
+- La extensión se copia a `%LOCALAPPDATA%\Extensiones\PDF G`, así que puedes borrar la carpeta descargada.
+- **Para eliminarla**, ejecuta el instalador y elige *Eliminar una extensión instalada*: abre la página de extensiones para que pulses *Quitar* y después borra su carpeta y su acceso directo.
 - **Para actualizar**, sustituye la carpeta por la versión nueva y vuelve a ejecutar el instalador: reemplaza los archivos sin repetir los clics.
 - Como el instalador crea el acceso directo, PDF G ya no muestra su aviso de bienvenida al instalarse así.
 
@@ -78,7 +79,7 @@ Mis extensiones/
 └── incidencias-g/    → "Incidencias G  v0.4.2"
 ```
 
-Para añadir otra, copia su carpeta al lado: no hay que editar el `.cmd`. Del `manifest.json` toma el nombre (también si está traducido con `__MSG_…__`), la versión y el icono del acceso directo. El acceso directo abre `app.html`, `index.html`, la ventana emergente o la página de opciones, la primera que exista. Cada extensión se copia a `%LOCALAPPDATA%\<nombre>\extension`.
+Para añadir otra, copia su carpeta al lado: no hay que editar el `.cmd`. Del `manifest.json` toma el nombre (también si está traducido con `__MSG_…__`), la versión y el icono del acceso directo. El acceso directo abre `app.html`, `index.html`, la ventana emergente o la página de opciones, la primera que exista. Cada extensión se copia a `%LOCALAPPDATA%\Extensiones\<nombre>`.
 
 > **¿Por qué no es 100 % automático?** Chrome no deja que ningún programa active el modo de desarrollador ni cargue extensiones por su cuenta (desde Chrome 137 ignora incluso la opción `--load-extension`). Saltarse esa protección exigiría manipular archivos protegidos del perfil, que es lo que hace el malware. La instalación en un clic real llegará publicando PDF G en la Chrome Web Store.
 
